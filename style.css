@@ -157,7 +157,9 @@ blockquote {
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 5em;
+	margin-top: 30px;
+	margin-bottom: 60px;
 }
 
 h2 {
