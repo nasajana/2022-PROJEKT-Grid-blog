@@ -178,4 +178,18 @@ figure, blockquote, p{
 footer {
 	font-size: .75em;
 }
+.tip-vlevo{
+	text-align: right;
+}
 
+/* carecky*/
+
+blockquote::after,
+blockquote::before{
+	content: "";
+	display: block;
+	width: 120px;
+	height: 2px;
+	background: var(--limetka);
+	margin: 20px auto;
+}
