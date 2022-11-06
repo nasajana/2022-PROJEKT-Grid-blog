@@ -80,12 +80,14 @@ blockquote {
 	grid-template-columns: 1fr 4fr 2fr;
 	grid-template-rows: auto;
 	gap: 40px;
+
 }
 
 blockquote,
 figure {
 	grid-column: 1 / -1;
 }
+
 header,
 h1,
 h2,
@@ -101,7 +103,50 @@ p {
 	grid-column: 1;
 }
 
+/* barvy */
 .tip {
 	background-color: var(--svetla);
 }
 
+blockquote {
+	color: var(--seda);
+}
+
+h1,
+h2 {
+	color: var(--zelena);
+}
+
+.tip a{
+	color: var(--oranzova);
+}
+.tip a:hover,.tip a:focus{
+	color: var(--zluta);
+}
+
+.tip-vlevo{
+	border-right: 2px solid var(--oranzova);
+}
+
+.tip-vpravo{
+	border-left: 2px solid var(--oranzova);
+}
+/*velikosti */
+blockquote {
+	font-size: 2em;
+	text-align: center;
+}
+
+h1{
+	font-size: 3em;
+}
+h2{
+	font-size: 2em;
+}
+img{
+	width: 100%;
+}
+
+.tip{
+	padding: 20px;
+}
