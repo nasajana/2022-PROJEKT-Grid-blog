@@ -91,7 +91,8 @@ figure {
 header,
 h1,
 h2,
-p {
+p,
+footer {
 	grid-column: 2;
 }
 
@@ -108,7 +109,8 @@ p {
 	background-color: var(--svetla);
 }
 
-blockquote {
+blockquote,
+figcaption {
 	color: var(--seda);
 }
 
@@ -117,36 +119,63 @@ h2 {
 	color: var(--zelena);
 }
 
-.tip a{
+.tip a {
 	color: var(--oranzova);
 }
-.tip a:hover,.tip a:focus{
+
+.tip a:hover,
+.tip a:focus {
 	color: var(--zluta);
 }
 
-.tip-vlevo{
-	border-right: 2px solid var(--oranzova);
+.tip-vlevo {
+	border-right: 2px solid var(--zluta);
 }
 
-.tip-vpravo{
-	border-left: 2px solid var(--oranzova);
+.tip-vpravo {
+	border-left: 2px solid var(--zluta);
 }
+
+footer,
+.meta {
+	color: var(--seda);
+}
+
+footer a {
+	color: var(--seda);
+}
+
+footer a:hover,
+footer a:focus {
+	color: var(--tmava);
+}
+
 /*velikosti */
 blockquote {
 	font-size: 2em;
 	text-align: center;
 }
 
-h1{
+h1 {
 	font-size: 3em;
 }
-h2{
+
+h2 {
 	font-size: 2em;
 }
-img{
+
+img {
 	width: 100%;
 }
+figure, blockquote, p{
+	margin: 0;
+}
 
-.tip{
+.tip {
 	padding: 20px;
 }
+
+footer {
+	font-size: .75em;
+}
+
