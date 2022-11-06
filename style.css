@@ -1,17 +1,26 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+html {
+	box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+	box-sizing: inherit;
+}
 
 
 body {
 	margin: 0;
 	padding: 30px;
-	font-family:  'Alice', serif;
+	font-family: 'Alice', serif;
 	font-size: 18px;
 	line-height: 1.5;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	font-family: 'Kaushan Script', cursive;
 	font-weight: normal;
 	margin: 0;
@@ -66,4 +75,33 @@ blockquote {
 	- https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
 */
 
+.blog {
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	grid-template-rows: auto;
+	gap: 40px;
+}
+
+blockquote,
+figure {
+	grid-column: 1 / -1;
+}
+header,
+h1,
+h2,
+p {
+	grid-column: 2;
+}
+
+.tip-vpravo {
+	grid-column: 3;
+}
+
+.tip-vlevo {
+	grid-column: 1;
+}
+
+.tip {
+	background-color: var(--svetla);
+}
 
